@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/panel_background"
+    android:padding="16dp"
+    android:elevation="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Clicker"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp"/>
+
+    <!-- Interval row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Interval"
+            android:textColor="#CCCCCC"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="−"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#444466"
+            android:padding="0dp"/>
+
+        <TextView
+            android:id="@+id/tvInterval"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:text="1000ms"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="+"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#444466"
+            android:padding="0dp"/>
+    </LinearLayout>
+
+    <!-- Target row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="14dp">
+
+        <TextView
+            android:id="@+id/tvTarget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Target: (—, —)"
+            android:textColor="#CCCCCC"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/btnSetTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Set"
+            android:textSize="12sp"
+            android:backgroundTint="#444466"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Action buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStartStop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="6dp"/>
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Close"
+            android:backgroundTint="#555566"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="6dp"/>
+    </LinearLayout>
+</LinearLayout>
